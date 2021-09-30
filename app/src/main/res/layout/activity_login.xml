@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:paddingStart="30dp"
+    android:paddingEnd="30dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:layout_marginTop="50dp"
+        android:textSize="28sp"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="#5DB075"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="59dp">
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="6dp"
+            android:text="Facebook"
+            android:textColor="@color/white"
+            android:fontFamily="@font/montserrat_medium"
+            android:drawableStart="@drawable/ic_facebook"
+            android:background="@drawable/bg_button_1"
+            android:textAllCaps="false"
+            android:paddingStart="10dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="6dp"
+            android:text="Twitter"
+            android:textColor="@color/white"
+            android:fontFamily="@font/montserrat_medium"
+            android:drawableStart="@drawable/ic_twitter"
+            android:background="@drawable/bg_button_1"
+            android:textAllCaps="false"
+            android:paddingStart="10dp"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Or log in with email "
+        android:layout_marginTop="54dp"
+        android:textSize="14dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:textColor="#5DB075"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="49dp"
+        android:background="@drawable/bg_edit_text_1"
+        android:hint="Your email "
+        android:inputType="textEmailAddress"
+        android:paddingStart="20dp"
+        android:paddingEnd="18dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:background="@drawable/bg_edit_text_1"
+        android:paddingStart="20dp"
+        android:paddingEnd="15dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Log In"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_medium"
+        android:background="@drawable/bg_button_1"
+        android:textAllCaps="false"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don’t have an account?"
+        android:layout_marginTop="40dp"
+        android:textSize="14dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:textColor="#5DB075"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Sign Up"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_medium"
+        android:background="@drawable/bg_button_1"
+        android:textAllCaps="false"/>
+
+
+</LinearLayout>

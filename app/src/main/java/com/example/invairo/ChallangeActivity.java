@@ -6,17 +6,21 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.LinearLayout;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
-public class ProfileActivity extends AppCompatActivity {
+public class ChallangeActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profile);
+        setContentView(R.layout.activity_challange);
 
+        LinearLayout btnChallange = (LinearLayout) findViewById(R.id.challange1);
         BottomNavigationView bottomNav = (BottomNavigationView) findViewById(R.id.bottom_nav);
 
         bottomNav.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
@@ -24,15 +28,15 @@ public class ProfileActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()){
                     case R.id.page_news:
-                        Intent intent = new Intent(ProfileActivity.this, NewsActivity.class);
+                        Intent intent = new Intent(ChallangeActivity.this, NewsActivity.class);
                         startActivity(intent);
                         break;
                     case R.id.page_profile:
-                        Intent intent2 = new Intent(ProfileActivity.this, ProfileActivity.class);
+                        Intent intent2 = new Intent(ChallangeActivity.this, ProfileActivity.class);
                         startActivity(intent2);
                         break;
                     case R.id.page_challange:
-                        Intent intent3 = new Intent(ProfileActivity.this, ChallangeActivity.class);
+                        Intent intent3 = new Intent(ChallangeActivity.this, ChallangeActivity.class);
                         startActivity(intent3);
                         break;
                 }
@@ -41,6 +45,13 @@ public class ProfileActivity extends AppCompatActivity {
             }
         });
 
+        btnChallange.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent2 = new Intent(ChallangeActivity.this, DetailChallangeActivity.class);
+                startActivity(intent2);
+            }
+        });
 
     }
 }

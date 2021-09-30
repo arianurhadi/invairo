@@ -80,6 +80,11 @@ public class NewsActivity extends AppCompatActivity {
                     case R.id.page_profile:
                         Intent intent2 = new Intent(NewsActivity.this, ProfileActivity.class);
                         startActivity(intent2);
+                        break;
+                    case R.id.page_challange:
+                        Intent intent3 = new Intent(NewsActivity.this, ChallangeActivity.class);
+                        startActivity(intent3);
+                        break;
                 }
 
                 return false;

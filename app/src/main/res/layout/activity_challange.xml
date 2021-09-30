@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChallangeActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Challange"
+        android:textAlignment="center"
+        android:textColor="@color/green_001"
+        android:textSize="24dp" />
+
+    <RelativeLayout
+        android:id="@+id/month_grid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="59dp"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:id="@+id/challange1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="11dp"
+            android:layout_marginBottom="30dp"
+            android:layout_alignParentStart="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textChallange1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daur Ulang"
+                android:textSize="14dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textColor="@color/green_001"/>
+
+            <ImageView
+                android:id="@+id/imgChallange1"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:src="@drawable/gambar1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/challange2"
+            android:layout_width="wrap_content"
+            android:layout_height="176dp"
+            android:gravity="center"
+            android:layout_toRightOf="@id/challange1"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textChallange2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reboisasi"
+                android:textSize="14dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textColor="@color/green_001"/>
+
+            <ImageView
+                android:id="@+id/imgChallange2"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:src="@drawable/gambar2"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/challange3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginEnd="11dp"
+            android:layout_below="@id/challange1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textChallange3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Polusi"
+                android:textSize="14dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textColor="@color/green_001"/>
+
+            <ImageView
+                android:id="@+id/imgChallange3"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:src="@drawable/gambar3"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/challange4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@id/challange2"
+            android:layout_toEndOf="@id/challange3"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textChallange4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pemanasan Global"
+                android:textSize="14dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:textColor="@color/green_001"/>
+
+            <ImageView
+                android:id="@+id/imgChallange4"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:src="@drawable/gambar4"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/background_bottom_navigation_1"
+        android:paddingStart="40dp"
+        android:paddingTop="12dp"
+        android:paddingEnd="40dp"
+        android:paddingBottom="12dp"
+        app:itemIconSize="20dp"
+        app:elevation="0dp"
+        app:menu="@menu/bottom_navigation_menu"/>
+
+</RelativeLayout>

@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Invairo">
         <activity
+            android:name=".DetailChallangeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ChallangeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+        <activity
             android:name=".ProfileActivity"
             android:exported="true" />
         <activity
