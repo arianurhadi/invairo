@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/page_news"
+        android:enabled="true"
+        android:icon="@drawable/ic_explore"
+        android:title="News"/>
+
+    <item
+        android:id="@+id/page_challange"
+        android:enabled="true"
+        android:icon="@drawable/ic_challange"
+        android:title="Challange"/>
+
+    <item
+        android:id="@+id/page_profile"
+        android:enabled="true"
+        android:icon="@drawable/ic_profil"
+        android:title="Profile"/>
+
+</menu>

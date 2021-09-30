@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+    android:layout_marginTop="30dp"
+    android:paddingBottom="4dp">
+
+    <ImageView
+        android:id="@+id/img_news"
+        android:layout_width="110dp"
+        android:layout_height="111dp"
+        android:elevation="4dp"
+        android:src="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/title_news"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Judul Berita"
+        android:textSize="14sp"
+        android:textColor="@color/green_001"
+        android:fontFamily="@font/montserrat_regular"
+        android:layout_marginStart="20dp"/>
+
+</LinearLayout>

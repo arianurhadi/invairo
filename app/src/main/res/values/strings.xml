@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Invairo</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pulvinar risus vel faucibus consequat. Vivamus a convallis nunc. Mauris tincidunt risus non magna fringilla, in posuere nulla facilisis. Nam faucibus feugiat mauris, ut lobortis nisi sollicitudin id. Nullam facilisis vulputate pellentesque. Proin rhoncus auctor rhoncus. Aliquam erat volutpat. Donec nisi arcu, tincidunt quis accumsan ut, vestibulum dapibus lorem. Aenean eget ullamcorper diam, quis maximus erat.</string>
 </resources>
