@@ -38,6 +38,8 @@ public class NewsActivity extends AppCompatActivity {
         TabLayout tabLayout = findViewById(R.id.tabLayout);
         BottomNavigationView bottomNav = (BottomNavigationView) findViewById(R.id.bottom_nav);
 
+        bottomNav.setSelectedItemId(R.id.page_news);
+
         showRcView(dataNews, "semua");
 
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
@@ -75,14 +77,17 @@ public class NewsActivity extends AppCompatActivity {
                 switch (item.getItemId()){
                     case R.id.page_news:
                         Intent intent = new Intent(NewsActivity.this, NewsActivity.class);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                         startActivity(intent);
                         break;
                     case R.id.page_profile:
                         Intent intent2 = new Intent(NewsActivity.this, ProfileActivity.class);
+                        intent2.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                         startActivity(intent2);
                         break;
                     case R.id.page_challange:
                         Intent intent3 = new Intent(NewsActivity.this, ChallangeActivity.class);
+                        intent3.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                         startActivity(intent3);
                         break;
                 }

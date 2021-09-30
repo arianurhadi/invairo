@@ -1,338 +1,306 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".DetailChallangeActivity">
 
-    <Button
-        android:id="@+id/btnBack"
-        android:layout_width="9dp"
-        android:layout_height="15dp"
-        android:background="@drawable/ic_back"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="19dp"
-        android:layout_marginTop="30dp"/>
-
-    <TextView
-        android:id="@+id/title2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:fontFamily="@font/montserrat_bold"
-        android:text="Challange"
-        android:textAlignment="center"
-        android:textColor="#5DB075"
-        android:textSize="24dp" />
-
-
-    <ImageView
-        android:id="@+id/imgChallange1"
-        android:layout_width="160dp"
-        android:layout_height="160dp"
-        android:src="@drawable/gambar2"
-        android:layout_below="@id/title2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"/>
-
-    <TextView
-        android:id="@+id/textChallange5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Reboisasi"
-        android:textSize="18dp"
-        android:fontFamily="@font/montserrat_semibold"
-        android:textColor="#5DB075"
-        android:layout_below="@id/imgChallange1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"/>
-
-    <TextView
-        android:id="@+id/info"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="0/7 Aksi"
-        android:textSize="14dp"
-        android:fontFamily="@font/montserrat_semibold"
-        android:layout_below="@id/textChallange5"
-        android:layout_marginTop="53dp"
-        android:layout_marginStart="37dp"
-        android:textColor="#5DB075"/>
-
-    <LinearLayout
-        android:id="@+id/section_hari"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="31dp"
-        android:layout_below="@id/info">
-        <RelativeLayout
-            android:layout_width="33dp"
-            android:layout_height="48dp"
-            android:layout_marginEnd="16dp"
-            android:background="@drawable/bg_status_challange_2">
-            <TextView
-                android:id="@+id/hari"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Hari"
-                android:layout_centerHorizontal="true"
-                android:textColor="@color/white"
-                android:textSize="10sp"/>
-
-            <TextView
-                android:id="@+id/angka"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="1"
-                android:layout_below="@id/hari"
-                android:layout_centerHorizontal="true"
-                android:textColor="@color/white"
-                android:textSize="18sp"/>
-
-            <View
-                android:layout_width="8dp"
-                android:layout_height="2dp"
-                android:layout_below="@id/angka"
-                android:layout_centerHorizontal="true"
-                android:background="@color/white"/>
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="33dp"
-            android:layout_height="48dp"
-            android:layout_marginEnd="16dp"
-            android:background="@drawable/bg_status_challange_2"
-            android:backgroundTint="#CDD3D7">
-            <TextView
-                android:id="@+id/hari2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Hari"
-                android:layout_centerHorizontal="true"
-                android:textColor="@color/white"
-                android:textSize="10sp"/>
-
-            <TextView
-                android:id="@+id/angka2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="2"
-                android:layout_below="@id/hari2"
-                android:layout_centerHorizontal="true"
-                android:textColor="@color/white"
-                android:textSize="18sp"/>
-
-            <View
-                android:layout_width="8dp"
-                android:layout_height="2dp"
-                android:layout_below="@id/angka2"
-                android:layout_centerHorizontal="true"
-                android:background="@color/white"/>
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="33dp"
-            android:layout_height="48dp"
-            android:layout_marginEnd="16dp"
-            android:background="@drawable/bg_status_challange_2"
-            android:backgroundTint="#CDD3D7">
-            <TextView
-                android:id="@+id/hari3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Hari"
-                android:layout_centerHorizontal="true"
-                android:textColor="@color/white"
-                android:textSize="10sp"/>
-
-            <TextView
-                android:id="@+id/angka3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/hari3"
-                android:layout_centerHorizontal="true"
-                android:text="3"
-                android:textColor="@color/white"
-                android:textSize="18sp" />
-
-            <View
-                android:layout_width="8dp"
-                android:layout_height="2dp"
-                android:layout_below="@id/angka3"
-                android:layout_centerHorizontal="true"
-                android:background="@color/white"/>
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="33dp"
-            android:layout_height="48dp"
-            android:layout_marginEnd="16dp"
-            android:background="@drawable/bg_status_challange_2"
-            android:backgroundTint="#CDD3D7">
-            <TextView
-                android:id="@+id/hari4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Hari"
-                android:layout_centerHorizontal="true"
-                android:textColor="@color/white"
-                android:textSize="10sp"/>
-
-            <TextView
-                android:id="@+id/angka4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="4"
-                android:layout_below="@id/hari4"
-                android:layout_centerHorizontal="true"
-                android:textColor="@color/white"
-                android:textSize="18sp"/>
-
-            <View
-                android:layout_width="8dp"
-                android:layout_height="2dp"
-                android:layout_below="@id/angka4"
-                android:layout_centerHorizontal="true"
-                android:background="@color/white"/>
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="33dp"
-            android:layout_height="48dp"
-            android:layout_marginEnd="16dp"
-            android:background="@drawable/bg_status_challange_2"
-            android:backgroundTint="#CDD3D7">
-            <TextView
-                android:id="@+id/hari5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Hari"
-                android:layout_centerHorizontal="true"
-                android:textColor="@color/white"
-                android:textSize="10sp"/>
-
-            <TextView
-                android:id="@+id/angka5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="5"
-                android:layout_below="@id/hari5"
-                android:layout_centerHorizontal="true"
-                android:textColor="@color/white"
-                android:textSize="18sp"/>
-
-            <View
-                android:layout_width="8dp"
-                android:layout_height="2dp"
-                android:layout_below="@id/angka5"
-                android:layout_centerHorizontal="true"
-                android:background="@color/white"/>
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="33dp"
-            android:layout_height="48dp"
-            android:layout_marginEnd="16dp"
-            android:background="@drawable/bg_status_challange_2"
-            android:backgroundTint="#CDD3D7">
-            <TextView
-                android:id="@+id/hari6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Hari"
-                android:layout_centerHorizontal="true"
-                android:textColor="@color/white"
-                android:textSize="10sp"/>
-
-            <TextView
-                android:id="@+id/angka6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="6"
-                android:layout_below="@id/hari6"
-                android:layout_centerHorizontal="true"
-                android:textColor="@color/white"
-                android:textSize="18sp"/>
-
-            <View
-                android:layout_width="8dp"
-                android:layout_height="2dp"
-                android:layout_below="@id/angka6"
-                android:layout_centerHorizontal="true"
-                android:background="@color/white"/>
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="33dp"
-            android:layout_height="48dp"
-            android:layout_marginEnd="16dp"
-            android:background="@drawable/bg_status_challange_2"
-            android:backgroundTint="#CDD3D7">
-            <TextView
-                android:id="@+id/hari7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Hari"
-                android:layout_centerHorizontal="true"
-                android:textColor="@color/white"
-                android:textSize="10sp"/>
-
-            <TextView
-                android:id="@+id/angka7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="7"
-                android:layout_below="@id/hari7"
-                android:layout_centerHorizontal="true"
-                android:textColor="@color/white"
-                android:textSize="18sp"/>
-
-            <View
-                android:layout_width="8dp"
-                android:layout_height="2dp"
-                android:layout_below="@id/angka7"
-                android:layout_centerHorizontal="true"
-                android:background="@color/white"/>
-
-        </RelativeLayout>
-
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/tv_desc_challange"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:text="@string/lorem_ipsum"
-        android:textSize="14sp"
-        android:textColor="@color/green_001"
-        android:layout_below="@id/section_hari"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:fontFamily="@font/montserrat_regular"/>
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_start"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/tv_desc_challange"
-        android:layout_marginStart="26dp"
-        android:layout_marginTop="66dp"
-        android:layout_marginEnd="26dp"
-        android:background="@drawable/bg_button_1"
-        android:fontFamily="@font/montserrat_medium"
-        android:text="Get started"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:textSize="16sp" />
+        android:layout_height="wrap_content">
 
-</RelativeLayout>
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="9dp"
+            android:layout_height="15dp"
+            android:background="@drawable/ic_back"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Challange"
+            android:textAlignment="center"
+            android:textColor="#5DB075"
+            android:textSize="24dp" />
+
+
+        <ImageView
+            android:id="@+id/imgChallange"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_below="@id/title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/img_challange1" />
+
+        <TextView
+            android:id="@+id/textChallange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgChallange"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Daur Ulang"
+            android:textColor="#5DB075"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0/7 Aksi"
+            android:textSize="14dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:layout_below="@id/textChallange"
+            android:layout_marginTop="53dp"
+            android:layout_marginStart="37dp"
+            android:textColor="#5DB075"/>
+
+        <LinearLayout
+            android:id="@+id/section_hari"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="31dp"
+            android:layout_below="@id/info">
+            <RelativeLayout
+                android:layout_width="33dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/bg_hari_challange">
+                <TextView
+                    android:id="@+id/hari"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hari"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textSize="10sp"/>
+
+                <TextView
+                    android:id="@+id/angka"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:layout_below="@id/hari"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textSize="18sp"/>
+
+                <View
+                    android:layout_width="19dp"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/angka"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/bg_button_1"
+                    android:backgroundTint="@color/white" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="33dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/bg_hari_challange"
+                android:backgroundTint="#CDD3D7">
+                <TextView
+                    android:id="@+id/hari2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hari"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textSize="10sp"/>
+
+                <TextView
+                    android:id="@+id/angka2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:layout_below="@id/hari2"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textSize="18sp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="33dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/bg_hari_challange"
+                android:backgroundTint="#CDD3D7">
+                <TextView
+                    android:id="@+id/hari3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hari"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"/>
+
+                <TextView
+                    android:id="@+id/angka3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/hari3"
+                    android:layout_centerHorizontal="true"
+                    android:text="3"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="33dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/bg_hari_challange"
+                android:backgroundTint="#CDD3D7">
+                <TextView
+                    android:id="@+id/hari4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hari"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"/>
+
+                <TextView
+                    android:id="@+id/angka4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4"
+                    android:layout_below="@id/hari4"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="33dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/bg_hari_challange"
+                android:backgroundTint="#CDD3D7">
+                <TextView
+                    android:id="@+id/hari5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hari"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"/>
+
+                <TextView
+                    android:id="@+id/angka5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:layout_below="@id/hari5"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="33dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/bg_hari_challange"
+                android:backgroundTint="#CDD3D7">
+                <TextView
+                    android:id="@+id/hari6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hari"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"/>
+
+                <TextView
+                    android:id="@+id/angka6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6"
+                    android:layout_below="@id/hari6"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="33dp"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_hari_challange"
+                android:backgroundTint="#CDD3D7">
+                <TextView
+                    android:id="@+id/hari7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hari"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"/>
+
+                <TextView
+                    android:id="@+id/angka7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7"
+                    android:layout_below="@id/hari7"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_desc_challange"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/section_hari"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/lorem_ipsum"
+            android:textColor="@color/green_001"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_desc_challange"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/bg_button_1"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Get started"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</ScrollView>

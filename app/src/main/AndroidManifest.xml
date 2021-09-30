@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Invairo">
         <activity
+            android:name=".FinishChallangeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".InputChallangeActivity"
+            android:exported="true" />
+        <activity
             android:name=".DetailChallangeActivity"
             android:exported="true" />
         <activity

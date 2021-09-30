@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InputChallangeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="9dp"
+        android:layout_height="15dp"
+        android:background="@drawable/ic_back"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Challange"
+        android:textAlignment="center"
+        android:textColor="#5DB075"
+        android:textSize="24sp" />
+
+
+        <ImageView
+            android:id="@+id/btnPicture"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="129dp"
+            android:src="@drawable/img_picture" />
+
+    <TextView
+        android:id="@+id/tvPicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnPicture"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Take a picture"
+        android:textColor="#5DB075"
+        android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/section_desc"
+            android:layout_width="195dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="121dp"
+            android:layout_below="@id/tvPicture"
+            android:gravity="center"
+            android:background="@drawable/bg_status_challange">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textSize="16sp"
+                android:fontFamily="@font/montserrat_medium"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/section_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/section_desc"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/bg_desc_news"
+            android:minHeight="140dp"
+            android:paddingStart="20dp"
+            android:paddingTop="11dp"
+            android:paddingEnd="20dp">
+
+            <EditText
+                android:id="@+id/input_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/montserrat_regular"
+                android:hint="Write text here"
+                android:inputType="textCapSentences|textMultiLine"
+                android:maxLength="200"
+                android:textColorHint="@color/green_001"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/section_input"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/bg_button_1"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Save"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</ScrollView>
