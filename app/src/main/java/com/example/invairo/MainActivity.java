@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         
         Button btnRegister = (Button) findViewById(R.id.register);
         Button btnNews = (Button) findViewById(R.id.news);

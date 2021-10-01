@@ -26,7 +26,6 @@
         android:layout_marginTop="59dp">
 
 
-
         <androidx.appcompat.widget.AppCompatButton
             android:layout_width="0dp"
             android:layout_height="48dp"
@@ -87,6 +86,7 @@
         android:paddingEnd="15dp"/>
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"

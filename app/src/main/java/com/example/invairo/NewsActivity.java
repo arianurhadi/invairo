@@ -8,8 +8,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager2.widget.ViewPager2;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.MenuItem;
 
 import com.example.invairo.adapter.RecyclerViewAdapter;
@@ -31,6 +33,36 @@ public class NewsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_news);
+
+        Thread t = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                //  Inisialisasi SharedPreferences
+                SharedPreferences getPrefs = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
+
+                //  Buat sebuah boolean di preference dan set menjadi true
+                boolean isFirstStart = getPrefs.getBoolean("firstStart", true);
+
+                //  Jika aplikasi baru digunakan pertama kali
+                if (isFirstStart) {
+                    //  Launch app intro
+                    final Intent i = new Intent(NewsActivity.this, OnBoardingActivity.class);
+                    runOnUiThread(new Runnable() {
+                        @Override public void run() {
+                            startActivity(i);
+                        }
+                    });
+                    //  Buat editor preferences
+                    SharedPreferences.Editor e = getPrefs.edit();
+                    //  Edit value yang firstart menjadi false
+                    e.putBoolean("firstStart", false);
+                    //  Simpan perubahannya
+                    e.apply();
+                }
+            }
+        });
+
+        t.start();
 
         initData();
 

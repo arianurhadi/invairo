@@ -15,11 +15,20 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         AppCompatButton btnSignUp = (AppCompatButton) findViewById(R.id.btn_sign_up);
+        AppCompatButton btnLogin = (AppCompatButton) findViewById(R.id.btn_login);
 
         btnSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LoginActivity.this, NewsActivity.class);
                 startActivity(intent);
             }
         });

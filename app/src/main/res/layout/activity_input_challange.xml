@@ -38,7 +38,7 @@
             android:layout_height="100dp"
             android:layout_below="@id/title"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="129dp"
+            android:layout_marginTop="100dp"
             android:src="@drawable/img_picture" />
 
     <TextView
@@ -57,17 +57,18 @@
             android:id="@+id/section_desc"
             android:layout_width="195dp"
             android:layout_height="34dp"
-            android:layout_marginTop="121dp"
             android:layout_below="@id/tvPicture"
-            android:gravity="center"
-            android:background="@drawable/bg_status_challange">
+            android:layout_marginTop="100dp"
+            android:background="@drawable/bg_status_challange"
+            android:gravity="center">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Description"
-                android:textSize="16sp"
                 android:fontFamily="@font/montserrat_medium"
-                android:textColor="@color/white"/>
+                android:text="Description"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
         </LinearLayout>
 
         <LinearLayout
